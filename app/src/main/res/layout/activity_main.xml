@@ -4,22 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <androidx.camera.view.PreviewView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/camera_preview"/>
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/pointer"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
 
     <TextView
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="32dp"
-        android:textSize="32sp"
-        android:textColor="@color/black"
-        tools:text="123"/>
+        android:textSize="70sp"
+        android:textColor="@color/white"
+        android:text="123"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="20dp"
+        android:text="найти без регистрации"
+        android:onClick="changeDegree"
+
+        />
+
 
 </FrameLayout>
